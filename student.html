@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details</title>
+</head>
+<body>
+    <h1>Student Registration Form</h1>
+    <form action ="/register" method = "POST">
+        <label for = "name">Name:</label>
+        <input type = "text" placeholder="Enter your name" required>
+        <br><br>
+
+        <label for = "email">Email:</label>
+        <input type = "email" placeholder="Enter your email" required>
+        <br><br>
+
+        <label for = "password">Password:</label>
+        <input type = "password" placeholder="Enter your password" required>
+        <br><br>
+        
+        <label for = "gender">Gender:</label>
+        <select id = "gender" required>
+            <option value = "">Select a gender</option>
+            <option value = "Male">Male</option>
+            <option value = "Female">Female</option>
+            <option value = "Other">Other</option>
+        </select>
+        <br><br>
+
+        <label for = "skills">Skills:</label>
+        <input type = "checkbox" id = "skills" value = "HTML"> HTML
+        <input type = "checkbox" id = "skills" value = "CSS"> CSS
+        <input type = "checkbox" id = "skills" value = "JavaScript"> JavaScript
+        <input type = "checkbox" id = "skills" value = "Python"> Python
+        <input type = "checkbox" id = "skills" value = "Java"> Java
+        <br><br>
+
+        <label for = "country">Select a County:</label>
+        <select id = "country" required>
+            <option value = "">Select a country</option>
+            <option value = "India">India</option>
+            <option value = "USA">USA</option>
+            <option value = "UK">UK</option>
+            <option value = "Canada">Canada</option>
+        </select>
+        <br><br>
+
+
+        <button type = "submit" value = "Register">Register</button>
+        <button type = "reset" value = "Reset">Reset</button>
+</body>
+</html>

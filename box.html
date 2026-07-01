@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+
+    <style>
+        .box{
+            height: 200px;
+            width: 200px;
+            color: darkblue;
+            background-color: lightblue;
+            border-radius: 100px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwCp6aKRuNibRjtolkyzPzcVHkCptEpYmveOhQQBRJUQ&s=10);
+            background-size: cover;
+        }        
+
+        .box img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content:space-between;
+            gap:20px;
+            border-radius: 50px;
+        }
+        body{
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            font-size: 25px;
+            margin:0;
+            height:100vh;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+    </style>
+</head>
+    
+<body>
+    <div class="container"> 
+        <div class="box"> Box 1</div>
+        <div class="box"> Box 2</div>
+        <div class="box"> Box 3</div>
+        <div class="box"> Box 4</div>
+        <div class="box"> Box 5</div>
+    </div>
+</body>
+</html>

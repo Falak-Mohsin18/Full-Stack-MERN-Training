@@ -14,13 +14,16 @@
         height:100vh;
         box-sizing:border-box;
         font-family:Arial, sans-serif;
-        background-color: teal;
+        background-color: white;
     }
     .container{
-        display: flex;
+        /*display: flex;
         align-items: center;
         justify-content:space-between;
-        gap:20px;
+        gap:20px;*/
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
     }
     .box{
         height: 200px;

@@ -25,9 +25,20 @@ function change(){
    //let styleChange4 = document.getElementById("para").style.display = "none";
    //console.log('Style change successfully...');
 
+   // get an attribute from an element
    let result = document.getElementById("new").getAttribute("id");
    console.log(result);
 
+   // set an attribute to an element
    let nextAttribute = document.getElementById("new").setAttribute("class","newClass");
-   console.log(result);
+   console.log(nextAttribute);
+
+   // delete an attribute from an element
+   let deleteAttribute = document.getElementById("new").removeAttribute("class");
+   console.log(deleteAttribute);
+
+   //create new element in DOM
+   let newPara = document.createElement("p");
+   newPara.innerText = "BBD University, Lucknow(Uttar Pradesh)";
+   document.body.appendChild(newPara);
 }

@@ -63,8 +63,15 @@ let removeElement = document.getElementById("new");
 removeElement.remove();\
 }*/
  
-const btn = document.getElementById("main");
+/*const btn = document.getElementById("main");
 
-btn.addEventListener("click", function() {
+btn.addEventListener("dblclick", function() {
     alert("Button clicked");
-})
+})*/
+
+//ES6 Features in Javascript
+//1. Let and Const
+{
+  let age = 23;
+}
+console.log(age); // ReferenceError: age is not defined

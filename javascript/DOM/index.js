@@ -1,4 +1,4 @@
-function change(){
+/*function change(){
     //let element = document.getElementById("new");
     //console.log(element);
 
@@ -60,8 +60,11 @@ document.body.appendChild(newImage);
 
 // remove an element 
 let removeElement = document.getElementById("new");
-removeElement.remove();
+removeElement.remove();\
+}*/
+ 
+const btn = document.getElementById("main");
 
-
-
-}
+btn.addEventListener("click", function() {
+    alert("Button clicked");
+})

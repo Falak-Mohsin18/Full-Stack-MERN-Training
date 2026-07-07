@@ -64,8 +64,29 @@ let array3 =[1,2,3,4];
 const[x,y,z,w] = array3;
 console.log(x,y,z,w);
 
-let obj = {name:"Falak", age: 21, role : "Student"};
+// let obj = {
+//     name: "Falak",
+//     age: 21,
+//     role: "Student"
+// };
 
+// const { name, age, role } = obj;
 
+// console.log(name, age, role);
+
+let obj2 = {
+    name: "Falak",
+    age: 21,
+    gender: "Female",
+    address: {
+        city: "Lucknow",
+        state: "Uttar Pradesh",
+        pincode: 226010
+    }
+};
+
+const {name, age, gender, address : {city,state,pincode}} = obj2;
+
+console.log(name, age, gender, city,state,pincode);
 
 

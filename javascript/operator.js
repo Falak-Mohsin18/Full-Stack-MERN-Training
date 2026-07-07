@@ -29,9 +29,6 @@ console.log(array);
 
 console.log(array.length);   
 
-//let obj = {name:"Falak", age: 21, city: "Lucknow"};
-//console.log(obj); // Output: {name: "Falak", age: 21, city: "Lucknow"}
-
 let subset =  array.slice(1, 4); // creates a new array with elements from index 1 to 3
 console.log(subset); // Output: [2, 3, 4]
 
@@ -60,3 +57,15 @@ console.log(newarray2);
 let arr3 = [3,4,5,7];
 let result1 = arr3.reduce((total, num) => total+num,0);
 console.log(result1);
+
+//destructuring
+
+let array3 =[1,2,3,4];
+const[x,y,z,w] = array3;
+console.log(x,y,z,w);
+
+let obj = {name:"Falak", age: 21, role : "Student"};
+
+
+
+

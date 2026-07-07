@@ -74,19 +74,33 @@ console.log(x,y,z,w);
 
 // console.log(name, age, role);
 
-let obj2 = {
-    name: "Falak",
-    age: 21,
-    gender: "Female",
-    address: {
-        city: "Lucknow",
-        state: "Uttar Pradesh",
-        pincode: 226010
-    }
-};
+// let obj2 = {
+//     name: "Falak",
+//     age: 21,
+//     gender: "Female",
+//     address: {
+//         city: "Lucknow",
+//         state: "Uttar Pradesh",
+//         pincode: 226010
+//     }
+// };
 
-const {name, age, gender, address : {city,state,pincode}} = obj2;
+// const {name, age, gender, address : {city,state,pincode}} = obj2;
 
-console.log(name, age, gender, city,state,pincode);
+// console.log(name, age, gender, city,state,pincode);
 
 
+// spread operator
+
+let obj3 = {
+    name: "Falak Mohsin",
+    age: 21
+}
+
+let obj4 = {
+    ...obj3,
+    coutry: "India",
+    state: "Uttar Pradesh"
+}
+console.log(obj4.age);
+console.log(obj4.name);

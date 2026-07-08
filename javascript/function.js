@@ -18,22 +18,36 @@
 
 // greet("Falak", happen)
 
-function checkresult(marks, callback) {
-    if (marks > 40) {
-        console.log("Pass");
-        callback();
-    } else {
-        console.log("Fail");
-    }
+// function checkresult(marks, callback) {
+//     if (marks > 40) {
+//         console.log("Pass");
+//         callback();
+//     } else {
+//         console.log("Fail");
+//     }
+// }
+
+// function happen() {
+//     console.log("student passed");
+// }
+
+// checkresult(50, happen);
+
+// function greet(){
+//     console.log("I am a Student....");
+// }
+// setTimeout(greet,5000);
+
+function login(name) {
+    console.log(`LOGGING IN ${name}`);
 }
 
 function happen() {
-    console.log("student passed");
+    console.log("Login Successful");
 }
 
-checkresult(50, happen);
+setTimeout(() => {
+    login("Falak");
+}, 1000);
 
-function greet(){
-    console.log("I am a Student....");
-}
-setTimeout(greet,5000);
+setTimeout(happen, 3000);

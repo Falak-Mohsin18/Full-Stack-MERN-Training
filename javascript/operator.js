@@ -104,3 +104,4 @@ let obj4 = {
 }
 console.log(obj4.age);
 console.log(obj4.name);
+

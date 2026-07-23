@@ -48,6 +48,38 @@ app.post("/login",(req,res)=>{
 
     }
 })
+
+function verifyToken(req,res,next){
+    const authHeader =  req.headers["authorization"]
+
+    if(!authHeader){
+        return res.status(401).json({
+            msg : "Invalid Token../Token Required"
+        })
+    }
+    const token = authHeader.split(" ")[1];
+
+    //jwt verify
+    jwt.verify(token, process.env.JWT_SECRET_KEY, (err, decoded) => {
+        if (err) {
+            return res.status(403).json({
+                msg: "Invalid Token"
+            });
+        }
+
+        req.user = decoded;
+        next();
+    });
+}
+    // Protected Route
+
+app.get("/profile", verifyToken,(req,res)=>{
+    return res.status(200).json({
+        msg : "User Authorize for profile",
+        user : req.user
+    });
+});
+
 app.listen(4000,()=>{
     console.log("Server is working properly")
 });
